@@ -1,6 +1,5 @@
 algoritmo "Cadastro-de-produto"
 var
-   p: vetor [1..20] de inteiro
    id: vetor [1..20] de inteiro
    nome: vetor [1..20] de caractere
    valorcusto: vetor [1..20] de real
@@ -36,4 +35,10 @@ inicio
    Se (verifica = falso) entao
       Escreval ("ID INEXISTENTE")
    FimSe
+   Limpatela
+   Escreval ("------------------------------")
+   Escreval ("           PRODUTOS           ")
+   Para cont de 1 ate (v) faca
+        Escreval (
+   FimPara
 fimalgoritmo
