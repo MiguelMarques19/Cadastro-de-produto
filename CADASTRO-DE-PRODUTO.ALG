@@ -6,6 +6,7 @@ var
    valorcusto: vetor [1..20] de real
    valorvenda: vetor [1..20] de real
    cont, v, m: inteiro
+   verifica: logico
 inicio
    Escreval ("Quantos produtos deseja inserir?")
    Leia (v)
@@ -20,12 +21,19 @@ inicio
       Leia (valorvenda[cont])
       Escreval ("-------------------")
    FimPara
-   Escreval ("Insira o produto que deseja mudar")
+   Escreval ("Insira o ID do produto que deseja mudar")
    Leia (m)
    Para cont de 1 ate (v) faca
       Se (m = id[cont]) entao
+         Escreval ("Oi")
 
+         verifica <- verdadeiro
+         interrompa
       Senao
+         verifica <- falso
       FimSe
    FimPara
+   Se (verifica = falso) entao
+      Escreval ("ID INEXISTENTE")
+   FimSe
 fimalgoritmo
