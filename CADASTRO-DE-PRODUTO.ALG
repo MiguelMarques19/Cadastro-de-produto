@@ -5,7 +5,7 @@ var
    nome: vetor [1..20] de caractere
    valorcusto: vetor [1..20] de real
    valorvenda: vetor [1..20] de real
-   cont, v: inteiro
+   cont, v, m: inteiro
 inicio
    Escreval ("Quantos produtos deseja inserir?")
    Leia (v)
@@ -19,5 +19,13 @@ inicio
       Escreval ("VALOR DE VENDA:")
       Leia (valorvenda[cont])
       Escreval ("-------------------")
+   FimPara
+   Escreval ("Insira o produto que deseja mudar")
+   Leia (m)
+   Para cont de 1 ate (v) faca
+      Se (m = id[cont]) entao
+
+      Senao
+      FimSe
    FimPara
 fimalgoritmo
