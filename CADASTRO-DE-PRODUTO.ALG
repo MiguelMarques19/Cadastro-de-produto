@@ -2,7 +2,7 @@ algoritmo "Cadastro-de-produto"
 var
    id: vetor [1..20] de inteiro
    nome: vetor [1..20] de caractere
-   valorcusto: vetor [1..20] de real
+   valorcompra: vetor [1..20] de real
    valorvenda: vetor [1..20] de real
    cont, v, m, mudar: inteiro
    verifica: logico
@@ -15,7 +15,7 @@ inicio
       Escreval ("NOME DO PRODUTO:")
       Leia (nome[cont])
       Escreval ("VALOR DE COMPRA:")
-      Leia (valorcusto[cont])
+      Leia (valorcompra[cont])
       Escreval ("VALOR DE VENDA:")
       Leia (valorvenda[cont])
       Escreval ("-------------------")
@@ -34,9 +34,11 @@ inicio
             Escreval ("Qual o novo nome?")
             Leia (nome[cont])
          caso 2
-            Escreval ("")
+            Escreval ("Qual o novo valor de compra")
+            Leia (valorcompra[cont])
          caso 3
-            Escreval ("")
+            Escreval ("Qual o novo valor de venda?")
+            Leia (valorvenda[cont])
          Outrocaso
             Escreval ("Número errado")
             Interrompa
@@ -54,10 +56,10 @@ inicio
    Escreval ("------------------------------")
    Escreval ("           PRODUTOS           ")
    Para cont de 1 ate (v) faca
-      Escreval ("ID:", id[cont]:10)
-      Escreval ("NOME:", nome[cont]:10)
-      Escreval ("VALOR DE COMPRA:", valorcusto[cont]:10:2)
-      Escreval ("VALOR DE VENDA:", valorvenda[cont]:10:2)
+      Escreval ("ID:", id[cont])
+      Escreval ("NOME:", nome[cont])
+      Escreval ("VALOR DE COMPRA:", valorcompra[cont]:5:2)
+      Escreval ("VALOR DE VENDA:", valorvenda[cont]:5:2)
       Escreval ( )
    FimPara
 fimalgoritmo
