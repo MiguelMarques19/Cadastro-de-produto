@@ -39,6 +39,10 @@ inicio
    Escreval ("------------------------------")
    Escreval ("           PRODUTOS           ")
    Para cont de 1 ate (v) faca
-        Escreval (
+      Escreval ("ID:", id[cont]:5)
+      Escreval ("NOME:", nome[cont]:5)
+      Escreval ("VALOR DE COMPRA:", valorcusto[cont]:5:2)
+      Escreval ("VALOR DE VENDA:", valorvenda[cont]:5:2)
+      Escreval ( )
    FimPara
 fimalgoritmo
