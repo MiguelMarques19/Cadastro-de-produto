@@ -25,21 +25,19 @@ inicio
    Para cont de 1 ate (v) faca
       Se (m = id[cont]) entao
          Escreval ("O que deseja mudar?")
-         Escreval ("[1] ID")
-         Escreval ("[2] NOME")
-         Escreval ("[3] VALOR DE COMPRA")
-         Escreval ("[4] VALOR DE VENDA")
+         Escreval ("[1] NOME")
+         Escreval ("[2] VALOR DE COMPRA")
+         Escreval ("[3] VALOR DE VENDA")
          Leia (mudar)
          Escolha mudar
          caso 1
-            Escreval ("")
+            Escreval ("Qual o novo nome?")
+            Leia (nome[cont])
          caso 2
             Escreval ("")
          caso 3
             Escreval ("")
-         caso 4
-            Escreval ("")
-         caso 5
+         Outrocaso
             Escreval ("Número errado")
             Interrompa
          FimEscolha
